@@ -25,6 +25,6 @@ public class Bullet : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rigidbody.MovePosition(transform.position+transform.right*speed*Time.fixedDeltaTime);
+        rigidbody.MovePosition(transform.position + transform.right * speed * Time.fixedDeltaTime);
     }
 }
