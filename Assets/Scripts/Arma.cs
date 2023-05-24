@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
@@ -21,6 +22,8 @@ public class Arma : MonoBehaviour
     {
         RotateTowardsMouse();
         CheckFiring();
+
+
     }
     private void RotateTowardsMouse()
     {

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class movJugador : MonoBehaviour
@@ -23,6 +24,9 @@ public class movJugador : MonoBehaviour
     {
         direccion = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
         Animator.SetBool("Running", Input.GetAxisRaw("Horizontal") != 0.0f);
+
+        if (Input.GetAxisRaw("Horizontal") < 0.0f) transform.localScale = new Vector3(-1.0f, 1.0f, 1.0f);
+        else if (Input.GetAxisRaw("Horizontal") > 0.0f) transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
     }
 
     private void FixedUpdate()
