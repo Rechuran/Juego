@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -52,7 +52,7 @@ TextureImporter:
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
-  spriteTessellationDetail: -1
+  spriteTessellationDetail: 0
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
@@ -139,18 +139,319 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
-    outline: []
+    sprites:
+    - serializedVersion: 2
+      name: TX Tileset Wall_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 352
+        width: 96
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f889311123799a440b5412bc753a5758
+      internalID: -1635650178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset Wall_1
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 376
+        width: 114
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e6ca3669dc998a4394fa39789e9d3b3
+      internalID: 423360347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset Wall_2
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 384
+        width: 10
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89e877809d9652b4d996340ad7da324b
+      internalID: 544862797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset Wall_3
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 384
+        width: 8
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4433da87c0d808b4d81244f7cae01653
+      internalID: 1844760509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset Wall_4
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 472
+        width: 96
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cf4e223636df8c4ca80821623224e4b
+      internalID: 1873058255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset Wall_5
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 352
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d27003df4edce4458065d38e3aec314
+      internalID: 1564296775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset Wall_6
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 256
+        width: 128
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b17ee24ebc3710b43b8bc3740303b7a6
+      internalID: -1043671557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset Wall_7
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 256
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cce490328bd87474b92fc6ef788330cf
+      internalID: 131366340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset Wall_8
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27002305852a9e64794b5a4ba31e5b25
+      internalID: 884752739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Tileset Wall_9
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 160
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1813c0f28fcc3014f9dd003b0199964a
+      internalID: -1357157754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline:
+    - - {x: -224, y: -30}
+      - {x: -226, y: -32}
+      - {x: -226, y: -96}
+      - {x: -224, y: -98}
+      - {x: -160, y: -98}
+      - {x: -158, y: -96}
+      - {x: -158, y: -32}
+      - {x: -160, y: -30}
+    - - {x: -128, y: -30}
+      - {x: -130, y: -32}
+      - {x: -130, y: -98}
+      - {x: -62, y: -98}
+      - {x: -62, y: -32}
+      - {x: -64, y: -30}
+    - - {x: -226, y: 66}
+      - {x: -226, y: -2}
+      - {x: -94, y: -2}
+      - {x: -94, y: 66}
+    - - {x: -64, y: 66}
+      - {x: -66, y: 64}
+      - {x: -66, y: 0}
+      - {x: -64, y: -2}
+      - {x: -32, y: -2}
+      - {x: -30, y: 0}
+      - {x: -30, y: 64}
+      - {x: -32, y: 66}
+    - - {x: -126, y: 226}
+      - {x: -226, y: 226}
+      - {x: -226, y: 94}
+      - {x: -128, y: 94}
+      - {x: -127, y: 96}
+      - {x: -126, y: 143}
+    - - {x: 190, y: 194}
+      - {x: 130, y: 194}
+      - {x: 126, y: 192}
+      - {x: 126, y: 141}
+      - {x: 127, y: 96}
+      - {x: 131, y: 94}
+      - {x: 192, y: 94}
+      - {x: 194, y: 109}
+      - {x: 194, y: 190}
+    - - {x: -102, y: 226}
+      - {x: -106, y: 222}
+      - {x: -106, y: 121}
+      - {x: -103, y: 118}
+      - {x: 8, y: 118}
+      - {x: 12, y: 122}
+      - {x: 12, y: 220}
+      - {x: 6, y: 226}
+    - - {x: 32, y: 226}
+      - {x: 30, y: 224}
+      - {x: 30, y: 128}
+      - {x: 32, y: 126}
+      - {x: 42, y: 126}
+      - {x: 44, y: 128}
+      - {x: 44, y: 224}
+      - {x: 42, y: 226}
+    - - {x: 88, y: 226}
+      - {x: 86, y: 224}
+      - {x: 86, y: 128}
+      - {x: 88, y: 126}
+      - {x: 96, y: 126}
+      - {x: 98, y: 128}
+      - {x: 98, y: 224}
+      - {x: 96, y: 226}
+    - - {x: -93, y: 157}
+      - {x: -3, y: 157}
+      - {x: -3, y: 131}
+      - {x: -93, y: 131}
+    - - {x: -211, y: 213}
+      - {x: -139, y: 213}
+      - {x: -139, y: 163}
+      - {x: -211, y: 163}
+    - - {x: 141, y: 181}
+      - {x: 181, y: 181}
+      - {x: 181, y: 163}
+      - {x: 141, y: 163}
+    - - {x: 126, y: 226}
+      - {x: 126, y: 214}
+      - {x: 226, y: 214}
+      - {x: 226, y: 226}
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 0
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      TX Tileset Wall_0: -1635650178
+      TX Tileset Wall_1: 423360347
+      TX Tileset Wall_2: 544862797
+      TX Tileset Wall_3: 1844760509
+      TX Tileset Wall_4: 1873058255
+      TX Tileset Wall_5: 1564296775
+      TX Tileset Wall_6: -1043671557
+      TX Tileset Wall_7: 131366340
+      TX Tileset Wall_8: 884752739
+      TX Tileset Wall_9: -1357157754
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

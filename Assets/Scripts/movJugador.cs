@@ -33,4 +33,5 @@ public class movJugador : MonoBehaviour
     {
         rb2D.MovePosition(rb2D.position + direccion*velocidadMovimiento*Time.fixedDeltaTime);
     }
+
 }
