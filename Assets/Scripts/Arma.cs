@@ -31,6 +31,7 @@ public class Arma : MonoBehaviour
 
         transform.rotation = Quaternion.Euler(0, 0, angle);
         spriteRenderer.flipY = angle >= 90 && angle <= 270;
+
     }
     private float GetAngleTowardsMouse()
     {
