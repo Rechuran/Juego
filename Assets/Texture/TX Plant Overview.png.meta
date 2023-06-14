@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 194183e1153fed241badd212475f0d85
+guid: 444818253e755ce4b9fb8f477717f21e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -152,10 +152,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -11.5, y: -29.5}
-        - {x: -11.5, y: -67.5}
-        - {x: 8.5, y: -69.5}
-        - {x: 9.5, y: -29.5}
+      - - {x: -56.5, y: 69.5}
+        - {x: -56.5, y: -69.5}
+        - {x: 56.5, y: -69.5}
+        - {x: 56.5, y: 69.5}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -177,12 +177,16 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -18.5, y: -17.5}
-        - {x: -14.5, y: -32.5}
-        - {x: -15.5, y: -61.5}
-        - {x: 11.5, y: -62.5}
-        - {x: 15.5, y: -31.5}
-        - {x: 17.5, y: -15.5}
+      - - {x: -36.5, y: -73.5}
+        - {x: -35.5, y: -75.5}
+        - {x: -30.5, y: -75.5}
+        - {x: -30.5, y: -73.5}
+        - {x: -32.5, y: -71.5}
+        - {x: -34.5, y: -71.5}
+      - - {x: -48.5, y: 75.5}
+        - {x: -48.5, y: -75.5}
+        - {x: 48.5, y: -75.5}
+        - {x: 48.5, y: 75.5}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -204,10 +208,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -9.5, y: -30}
-        - {x: -10.5, y: -58}
-        - {x: 14.5, y: -60}
-        - {x: 13.5, y: -31}
+      - - {x: -39.5, y: 60}
+        - {x: -39.5, y: -60}
+        - {x: 39.5, y: -60}
+        - {x: 39.5, y: 60}
       physicsShape: []
       tessellationDetail: 0
       bones: []
