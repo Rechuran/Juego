@@ -16,6 +16,11 @@ public class Teletransporte : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        playerGO.transform.position = portalSalida.transform.position - new Vector3(0,0.7f,0);
+
+        if (collision.CompareTag("Player"))
+        {
+            playerGO.transform.position = portalSalida.transform.position - new Vector3(0, 0.7f, 0);
+        }
+        
     }
 }

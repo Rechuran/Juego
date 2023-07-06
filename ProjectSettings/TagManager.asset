@@ -4,7 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Teleporter
+  - Arma
+  - Enemigo
+  - Limites
   layers:
   - Default
   - TransparentFX
