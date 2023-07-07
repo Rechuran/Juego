@@ -12,6 +12,8 @@ public class Arma : MonoBehaviour
     public new Camera camera;
     public Transform spawner;
     public GameObject bulletPrefab;
+    [SerializeField] private AudioClip disparo;
+    private AudioSource audioSource;
 
 
     void Start()
@@ -20,10 +22,20 @@ public class Arma : MonoBehaviour
     }
     void Update()
     {
+        RepSonido();
         RotateTowardsMouse();
         CheckFiring();
 
+        
+    }
 
+
+    private void RepSonido()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+         ControladorSonidos.Instance.EjecutarSonido(disparo);
+        }
     }
     private void RotateTowardsMouse()
     {
@@ -48,10 +60,14 @@ public class Arma : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
+
+            
             GameObject bullet = Instantiate(bulletPrefab);
             bullet.transform.position = spawner.position;
             bullet.transform.rotation = transform.rotation;
             Destroy(bullet,2f);
+            
+            
         }
     }
 

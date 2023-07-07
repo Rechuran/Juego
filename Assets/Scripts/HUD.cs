@@ -3,20 +3,31 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using System;
+using System.Runtime.CompilerServices;
 
 public class HUD : MonoBehaviour
 {
     public GameObject[] vidas;
     [SerializeField] private GameObject menuGameOver;
+    private GameObject enemigo;
 
+    private void Start()
+    {
+        enemigo = GameObject.FindGameObjectWithTag("Enemigo");
+    }
     public void DesactivarVidas(int indice)
     {
 
         if (indice <= 0)
         {
             menuGameOver.SetActive(true);
+            Destroy(enemigo);
         }
-        vidas[indice].SetActive(false);
+        if (indice >= 0)
+        {
+            vidas[indice].SetActive(false);
+        }
+        
 
     }
 

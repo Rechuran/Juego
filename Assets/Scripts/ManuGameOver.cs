@@ -9,16 +9,7 @@ using System.Runtime.CompilerServices;
 
 public class ManuGameOver : MonoBehaviour
 {
-    // Start is called before the first frame update
 
-    [SerializeField] private GameObject menuGameOver;
-    private HUD hud;
-
-    public void ActivarMenu()
-    {
-        menuGameOver.SetActive(true);
-    }
-    
     public void Reinicar()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);

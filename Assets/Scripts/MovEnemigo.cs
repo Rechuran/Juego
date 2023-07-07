@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Animations;
 
 public class MovEnemigo : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class MovEnemigo : MonoBehaviour
 
     public bool estaActivo = false;
     private Vector3 direccionMovimiento;
+    private HUD hud;
 
 
     public bool getActivo()
@@ -29,7 +31,6 @@ public class MovEnemigo : MonoBehaviour
         {
             estaActivo = true;
         }
-
 
         if (estaActivo)
         {

@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
     private int vidas = 3;
 
-    public event EventHandler MuerteJugador;
+    
     
     public HUD hud;
 
@@ -31,11 +31,6 @@ public class GameManager : MonoBehaviour
     public void PerderVida()
     {
         vidas -= 1;
-
-        if (vidas == 0)
-        {
-            MuerteJugador?.Invoke(this, EventArgs.Empty);
-        }
         hud.DesactivarVidas(vidas);
     }
     
