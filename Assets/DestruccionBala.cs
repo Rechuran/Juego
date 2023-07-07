@@ -6,17 +6,15 @@ using UnityEngine.Rendering;
 
 public class DestruccionBala : MonoBehaviour
 {
-
     [SerializeField] private float daño;
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
         if (collision.CompareTag("Limites"))
         {
-
             Destroy(gameObject);
         }
-        else if (collision.CompareTag("Player"))
+        else if (collision.CompareTag("Enemigo"))
         {
             collision.GetComponent<Enemigo>().TomarDaño(daño);
             Destroy(gameObject);

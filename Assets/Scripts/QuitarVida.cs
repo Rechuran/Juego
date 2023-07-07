@@ -8,7 +8,7 @@ public class QuitarVida : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            GameManager.Instance.perderVida();
+            GameManager.Instance.PerderVida();
         }
     }
 }
