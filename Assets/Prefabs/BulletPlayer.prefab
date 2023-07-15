@@ -30,9 +30,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4729524822306231050}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< Updated upstream:Assets/Prefabs/BulletPlayer.prefab
   m_LocalPosition: {x: -0.0084, y: 0.0146, z: 0}
   m_LocalScale: {x: 0.47313303, y: 0.47313303, z: 0.47313303}
   m_ConstrainProportionsScale: 1
+=======
+  m_LocalPosition: {x: 0, y: 0.0005, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+>>>>>>> Stashed changes:Assets/Prefabs/bullet_impact_0.prefab
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
