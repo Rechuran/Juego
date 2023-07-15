@@ -2064,7 +2064,7 @@ RectTransform:
   m_Children:
   - {fileID: 1957694369}
   m_Father: {fileID: 1754771304}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2233,6 +2233,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e43c9130d565d74d839e62b4190456e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  menuGameOver: {fileID: 155779069}
+  jugador: {fileID: 2087628612}
+  arma: {fileID: 304592882}
   hud: {fileID: 1754771305}
 --- !u!4 &271942934
 Transform:
@@ -75041,7 +75044,7 @@ GameObject:
   - component: {fileID: 1609425923}
   - component: {fileID: 1609425922}
   m_Layer: 5
-  m_Name: Pausa
+  m_Name: BotonPausa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -75060,7 +75063,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1754771304}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -89942,7 +89945,7 @@ MonoBehaviour:
   velocidadMovimiento: 1
   rangoActivacion: 4
   jugador: {fileID: 2087628618}
-  estaActivo: 0
+  patrullar: {fileID: 1744848907}
 --- !u!114 &1744848907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -89997,7 +90000,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cdfa6c93398ad041a94711e66db54d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  patrullar: {fileID: 1744848907}
+  estatico: {fileID: 1744848906}
+  tiempo: 1
 --- !u!95 &1744848911
 Animator:
   serializedVersion: 5
@@ -90376,9 +90380,9 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 155779070}
   - {fileID: 2070535987}
   - {fileID: 1609425921}
+  - {fileID: 155779070}
   - {fileID: 1939955996}
   m_Father: {fileID: 0}
   m_RootOrder: 8
@@ -90862,7 +90866,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1957694369
 RectTransform:
   m_ObjectHideFlags: 0
@@ -91081,7 +91085,7 @@ RectTransform:
   - {fileID: 1531265668}
   - {fileID: 1110824889}
   m_Father: {fileID: 1754771304}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -91263,7 +91267,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22e6ddc32dfc6864dbd2666a42041d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
+  speed: 1.2
 --- !u!1 &2096052279
 GameObject:
   m_ObjectHideFlags: 0

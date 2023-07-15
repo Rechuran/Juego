@@ -9,10 +9,11 @@ public class MovEnemigo : MonoBehaviour
     public float rangoActivacion = 5f;
     public Transform jugador;
 
-    public bool estaActivo = false;
+    private bool estaActivo = false;
     private Vector3 direccionMovimiento;
     private HUD hud;
 
+    public Patrullar patrullar;
 
     public bool getActivo()
     {
@@ -29,7 +30,9 @@ public class MovEnemigo : MonoBehaviour
 
         if (!estaActivo && distanciaJugador < rangoActivacion)
         {
+            patrullar.enabled = false;
             estaActivo = true;
+
         }
 
         if (estaActivo)
