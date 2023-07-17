@@ -8,6 +8,7 @@ public class MovEnemigo : MonoBehaviour
     public float velocidadMovimiento = 3f;
     public float rangoActivacion = 5f;
     public Transform jugador;
+    public MirarPersonaje mirar;
 
     private bool estaActivo = false;
     private Vector3 direccionMovimiento;
@@ -31,6 +32,7 @@ public class MovEnemigo : MonoBehaviour
         if (!estaActivo && distanciaJugador < rangoActivacion)
         {
             patrullar.enabled = false;
+            mirar.enabled = true;
             estaActivo = true;
 
         }

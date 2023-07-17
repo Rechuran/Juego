@@ -7,6 +7,7 @@ public class MenuPausa : MonoBehaviour
 {
     [SerializeField] private GameObject botonPausa;
     [SerializeField] private GameObject menuPausa;
+    public Arma arma;
 
     private bool juegoPausado = false;
 
@@ -27,6 +28,7 @@ public class MenuPausa : MonoBehaviour
     public void Pausa()
     {
         Time.timeScale = 0f;
+        arma.enabled = false;
         botonPausa.SetActive(false);
         menuPausa.SetActive(true);
     }
@@ -34,6 +36,7 @@ public class MenuPausa : MonoBehaviour
     public void Reanudar()
     {
         Time.timeScale = 1f;
+        arma.enabled = true;
         botonPausa.SetActive(true);
         menuPausa.SetActive(false);
     }

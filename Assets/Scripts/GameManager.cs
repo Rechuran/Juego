@@ -9,8 +9,6 @@ public class GameManager : MonoBehaviour
 {
 
     [SerializeField] private GameObject menuGameOver;
-    [SerializeField] private GameObject jugador;
-    public Arma arma;
     public static GameManager Instance { get; private set; }
     private int vidas = 3;
 
@@ -36,9 +34,6 @@ public class GameManager : MonoBehaviour
 
         if (vidas < 1)
         {
-
-            jugador.SetActive(false); 
-            arma.enabled = false;
             menuGameOver.SetActive(true);
             
         }

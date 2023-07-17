@@ -10,6 +10,8 @@ public class HUD : MonoBehaviour
     public GameObject[] vidas;
     [SerializeField] private GameObject menuGameOver;
     private GameObject enemigo;
+    public MovPlayer movPlayer;
+    public Arma arma;
 
     private void Start()
     {
@@ -20,6 +22,9 @@ public class HUD : MonoBehaviour
 
         if (indice <= 0)
         {
+
+            movPlayer.enabled = false;
+            arma.enabled = false;
             menuGameOver.SetActive(true);
             Destroy(enemigo);
         }

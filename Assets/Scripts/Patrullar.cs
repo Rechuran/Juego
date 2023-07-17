@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.Rendering;
+using UnityEngine.Tilemaps;
 
 public class Patrullar : MonoBehaviour
 
@@ -11,6 +12,7 @@ public class Patrullar : MonoBehaviour
     [SerializeField] private float velocidadMovimiento;
     [SerializeField] private Transform[] puntosMovimientos;
     [SerializeField] private float distanciaMinima;
+    
 
     private SpriteRenderer spriteRenderer;
 
@@ -18,7 +20,10 @@ public class Patrullar : MonoBehaviour
 
     private bool DeteccionEnemigo;
 
-    private bool choqueParared;
+    private bool choquePared;
+
+    private bool isCollidingWithTilemap = false;
+
 
     void Start()
     {
@@ -31,13 +36,14 @@ public class Patrullar : MonoBehaviour
     {
         transform.position = Vector2.MoveTowards(transform.position, puntosMovimientos[numeroAleatorio].position,velocidadMovimiento*Time.deltaTime);
 
-        if ((Vector2.Distance(transform.position, puntosMovimientos[numeroAleatorio].position) < distanciaMinima) || choqueParared)
+        if ((Vector2.Distance(transform.position, puntosMovimientos[numeroAleatorio].position) < distanciaMinima) || choquePared)
         {
 
-            choqueParared = false;
+            
             numeroAleatorio = Random.Range(0,puntosMovimientos.Length);
             Girar();
-            
+            choquePared = false;
+
         }
     }
     // Update is called once per frame
@@ -51,17 +57,32 @@ public class Patrullar : MonoBehaviour
             spriteRenderer.flipX = false;
         }
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    void OnCollisionEnter2D(Collision2D other)
     {
 
-        if (collision.CompareTag("Limites"))
+        if (other.gameObject.CompareTag("Enemigo") || other.gameObject.GetComponent<TilemapCollider2D>())
         {
-            choqueParared = true;
+            choquePared = true;
+            isCollidingWithTilemap = true;
         }
         else
         {
-            choqueParared = false;
+            choquePared = false;
+            isCollidingWithTilemap = false;
         }
+    }
+
+    void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.GetComponent<TilemapCollider2D>())
+        {
+            isCollidingWithTilemap = false;
+        }
+    }
+
+    public bool IsCollidingWithTilemap()
+    {
+        return isCollidingWithTilemap;
     }
 
 }
