@@ -8,6 +8,7 @@ public class Teletransporte : MonoBehaviour
     public GameObject portalSalida;
     private GameObject playerGO;
 
+
     private void Start()
     {
         playerGO = GameObject.FindGameObjectWithTag("Player");

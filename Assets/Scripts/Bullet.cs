@@ -30,4 +30,5 @@ public class Bullet : MonoBehaviour
     {
         rigidbody.MovePosition(transform.position + transform.right * speed * Time.fixedDeltaTime);
     }
+
 }

@@ -7,6 +7,7 @@ using UnityEngine.Rendering;
 public class DestruccionBala : MonoBehaviour
 {
     [SerializeField] private float daño;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
