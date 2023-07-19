@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject menuGameOver;
     public static GameManager Instance { get; private set; }
     private int vidas = 3;
+    private int totalCachupines = 20;
 
     
     
