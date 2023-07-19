@@ -20,6 +20,12 @@ public class DestruccionBala : MonoBehaviour
             collision.GetComponent<Enemigo>().TomarDaño(daño);
             Destroy(gameObject);
         }
+        else if (collision.CompareTag("Boss"))
+        {
+            collision.GetComponent<EnemyBoss1>().TomarDaño(daño);
+            Destroy(gameObject);
+        }
+
     }
 
 }

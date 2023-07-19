@@ -6,6 +6,7 @@ using UnityEngine;
 public class Enemigo : MonoBehaviour
 {
     [SerializeField] private float vida;
+    public GameManager gameManager;
 
 
     public void TomarDaño(float daño)
@@ -14,6 +15,7 @@ public class Enemigo : MonoBehaviour
 
         if (vida <= 0) 
         {
+            gameManager.ActivarBoss();
             Destroy(gameObject);
         }
     }

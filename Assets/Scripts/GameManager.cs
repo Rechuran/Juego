@@ -12,6 +12,11 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
     private int vidas = 3;
     private int totalCachupines = 20;
+    private int cachupinesSalvados = 0;
+    private int enemigosEliminados = 0;
+    [SerializeField] private GameObject portalNivel2;
+
+    [SerializeField] private GameObject portalBoss;
 
     
     
@@ -45,7 +50,24 @@ public class GameManager : MonoBehaviour
         }
         
     }
-    
 
+    public void cachupinRecuperado()
+    {
+        cachupinesSalvados += 1;
+    }
 
+    public void ActivarBoss()
+    {
+        enemigosEliminados += 1;
+        
+        if (enemigosEliminados == 50 || enemigosEliminados == 100)
+        {
+            portalBoss.SetActive(true);
+        }
+    }
+
+    public void cambioNivel()
+    {
+        portalNivel2.SetActive(true);
+    }
 }
