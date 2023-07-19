@@ -6,6 +6,7 @@ public class QuitarVidaBoss : MonoBehaviour
 {
 
     private Animator animator;
+    private Rigidbody2D rd;
 
     private void Start()
     {
@@ -13,19 +14,27 @@ public class QuitarVidaBoss : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player") )
         {
-            animator.SetBool("Collider", true);    
+   
+            animacion();
             GameManager.Instance.PerderVida();
-            Destroy(gameObject);
+            Destroy(gameObject,0.4f);
+            
 
-        } else if (other.gameObject.CompareTag("Limites"))
+        } else if (other.gameObject.CompareTag("Limites") || other.gameObject.CompareTag("Arma"))
         {
-            animator.SetBool("Collider", true);
-            Destroy(gameObject);
+ 
+            animacion();
+            Destroy(gameObject, 0.4f);
 
 
         }
+    }
+
+    void animacion()
+    {
+        animator.SetBool("Collider", true);
     }
 
 }
