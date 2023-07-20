@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System;
-using UnityEditor;
 using UnityEngine.SearchService;
 using System.Runtime.CompilerServices;
 
@@ -22,7 +21,6 @@ public class ManuGameOver : MonoBehaviour
 
     public void Salir()
     {
-        UnityEditor.EditorApplication.isPlaying = false;
         Application.Quit();
     }
 }

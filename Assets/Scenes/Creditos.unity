@@ -265,46 +265,45 @@ MonoBehaviour:
 
     carpincho company
 
-    
 
-    
 
-    
+
+
+
 
     PROYECT
     MANAGER
 
     Juan Contreras
 
-    
 
-    
 
-    
+
+
+
 
     ART AND SPRITES
 
-    Matias
-    Navia
+    Matias Navia
 
-    
 
-    
 
-    
+
+
+
 
     PROGRAMMERS
 
-    Juan Contreras
+    Juan
+    Contreras
 
-    Matias
-    Navia
+    Matias Navia
 
-    
 
-    
 
-    
+
+
+
 
     MUSIC AND SOUND
 
@@ -313,26 +312,26 @@ MonoBehaviour:
     Juan
     Contreras
 
-    
 
-    
 
-    
+
+
+
 
     WEB DEVELOPMENT
 
     Matias Navia
 
-    
 
-    
 
-    
 
-    GAMEPLAY
-    DESIGN
 
-    Juan Contreras
+
+
+    GAMEPLAY DESIGN
+
+    Juan
+    Contreras
 
     Matias Navia'
   m_isRightToLeft: 0
@@ -692,7 +691,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1720180014}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 358dbe84f743b844985234f32538e96a, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: bdab9e443d16abb488ec639c12dd63dc, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 591998201}

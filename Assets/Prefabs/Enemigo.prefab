@@ -81,7 +81,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 99
   m_Sprite: {fileID: -1476340009, guid: 96f103e759dd87c44b5dfaa95340e654, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -145,8 +145,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 432dabc568986da4c9d3c9a6b61b61d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadMovimiento: 1
-  rangoActivacion: 4
+  velocidadMovimiento: 4
+  rangoActivacion: 3.5
   jugador: {fileID: 0}
   mirar: {fileID: 8744124061601099402}
   audioSource: {fileID: -8803557102850713637}

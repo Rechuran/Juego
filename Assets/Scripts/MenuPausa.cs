@@ -37,7 +37,6 @@ public class MenuPausa : MonoBehaviour
     {
         Time.timeScale = 1f;
         arma.enabled = true;
-        botonPausa.SetActive(true);
         menuPausa.SetActive(false);
     }
     public void Reininicar()

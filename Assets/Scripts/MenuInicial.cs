@@ -14,4 +14,9 @@ public class MenuInicial : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void Creditos()
+    {
+        SceneManager.LoadScene("Creditos");
+    }
 }

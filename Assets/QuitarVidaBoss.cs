@@ -15,15 +15,18 @@ public class QuitarVidaBoss : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.CompareTag("Player") )
+        if (other.gameObject.CompareTag("Player"))
         {
             GameManager.Instance.PerderVida();
             Destroy(gameObject);
-        } else if (other.gameObject.CompareTag("Limites") )
+        }
+        else if (other.gameObject.CompareTag("Limites"))
         {
-            animacion(); 
+            animacion();
             Destroy(gameObject, 0.4f);
-        } else if (other.gameObject.CompareTag("Arma"))
+        }
+
+        else if (other.gameObject.CompareTag("Bullet"))
         {
             Destroy(gameObject);
         }
