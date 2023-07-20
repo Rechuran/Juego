@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class MovPlayer : MonoBehaviour
 {
@@ -8,13 +9,17 @@ public class MovPlayer : MonoBehaviour
     private Rigidbody2D playerRb;
     private Vector2 moveInput;
     private Animator playerAnimator;
+    private int rescatados;
+    public TextMeshProUGUI puntuacionText;
+    public AudioSource audioSource;
+
 
 
     void Start()
     {
         playerRb = GetComponent<Rigidbody2D>();
         playerAnimator = GetComponent<Animator>();
-        
+        rescatados = 0;
 
     }
 
@@ -30,8 +35,21 @@ public class MovPlayer : MonoBehaviour
         playerAnimator.SetFloat("Horizontal", moveX);
         playerAnimator.SetFloat("Vertical", moveY);
         playerAnimator.SetFloat("Speed", moveInput.sqrMagnitude);
-       
- 
+
+        bool isMoving = Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D);
+
+        if (isMoving)
+        {
+    
+            if (!audioSource.isPlaying)
+                audioSource.Play();
+        }
+        else
+        {
+
+            audioSource.Stop();
+        }
+
 
     }
 
@@ -39,5 +57,15 @@ public class MovPlayer : MonoBehaviour
     {
         playerRb.MovePosition(playerRb.position + moveInput * speed * Time.fixedDeltaTime);
         
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Cachupin"))
+        {
+            rescatados++;
+            puntuacionText.text = rescatados.ToString();
+            Destroy(collision.gameObject);
+        }
     }
 }

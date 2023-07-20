@@ -11,8 +11,6 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject menuGameOver;
     public static GameManager Instance { get; private set; }
     private int vidas = 3;
-    private int totalCachupines = 20;
-    private int cachupinesSalvados = 0;
     private int enemigosEliminados = 0;
     [SerializeField] private GameObject portalNivel2;
 
@@ -49,11 +47,6 @@ public class GameManager : MonoBehaviour
             hud.DesactivarVidas(vidas);
         }
         
-    }
-
-    public void cachupinRecuperado()
-    {
-        cachupinesSalvados += 1;
     }
 
     public void ActivarBoss()

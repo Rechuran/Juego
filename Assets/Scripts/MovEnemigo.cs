@@ -13,6 +13,7 @@ public class MovEnemigo : MonoBehaviour
     private bool estaActivo = false;
     private Vector3 direccionMovimiento;
     private HUD hud;
+    public AudioSource audioSource;
 
     public Patrullar patrullar;
 
@@ -34,6 +35,7 @@ public class MovEnemigo : MonoBehaviour
             patrullar.enabled = false;
             mirar.enabled = true;
             estaActivo = true;
+            audioSource.enabled = true;
 
         }
 

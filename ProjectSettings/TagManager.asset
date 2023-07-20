@@ -8,6 +8,7 @@ TagManager:
   - Enemigo
   - Limites
   - Boss
+  - Cachupin
   layers:
   - Default
   - TransparentFX
