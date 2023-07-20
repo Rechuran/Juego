@@ -62,4 +62,7 @@ public class GameManager : MonoBehaviour
     {
         portalNivel2.SetActive(true);
     }
+
+    public static int score = 0;
+
 }

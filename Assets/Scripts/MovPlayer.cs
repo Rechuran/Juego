@@ -12,7 +12,8 @@ public class MovPlayer : MonoBehaviour
     private int rescatados;
     public TextMeshProUGUI puntuacionText;
     public AudioSource audioSource;
-
+    GameManager gameManager;
+    public AudioSource audioDog;
 
 
     void Start()
@@ -65,6 +66,7 @@ public class MovPlayer : MonoBehaviour
         {
             rescatados++;
             puntuacionText.text = rescatados.ToString();
+            audioDog.Play();
             Destroy(collision.gameObject);
         }
     }

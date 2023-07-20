@@ -46,7 +46,6 @@ public class Patrullar : MonoBehaviour
 
         }
     }
-    // Update is called once per frame
     public void Girar()
     {
         if (transform.position.x < puntosMovimientos[numeroAleatorio].position.x)

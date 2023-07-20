@@ -25,11 +25,6 @@ public class QuitarVidaBoss : MonoBehaviour
             animacion();
             Destroy(gameObject, 0.4f);
         }
-
-        else if (other.gameObject.CompareTag("Bullet"))
-        {
-            Destroy(gameObject);
-        }
     }
 
     void animacion()

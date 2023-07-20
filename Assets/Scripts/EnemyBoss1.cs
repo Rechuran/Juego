@@ -17,6 +17,7 @@ public class EnemyBoss1 : MonoBehaviour
         {
 
             Destroy(gameObject);
+          
             gameManager.cambioNivel();
         }
     }

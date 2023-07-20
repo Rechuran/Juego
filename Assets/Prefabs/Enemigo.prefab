@@ -107,6 +107,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vida: 100
   gameManager: {fileID: 0}
+  desaparecer: {fileID: -8803557102850713637}
 --- !u!61 &5979872130444515016
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -145,7 +146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 432dabc568986da4c9d3c9a6b61b61d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadMovimiento: 4
+  velocidadMovimiento: 1.1
   rangoActivacion: 3.5
   jugador: {fileID: 0}
   mirar: {fileID: 8744124061601099402}

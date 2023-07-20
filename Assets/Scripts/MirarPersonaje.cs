@@ -19,12 +19,12 @@ public class MirarPersonaje : MonoBehaviour
 
         if (playerPos.x < enemyPos.x)
         {
-            // Mira hacia la izquierda
+            
             spriteRenderer.flipX = false;
         }
         else if (playerPos.x > enemyPos.x)
         {
-            // Mira hacia la derecha
+            
             spriteRenderer.flipX = true;
         }
     }
